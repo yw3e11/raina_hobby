@@ -385,5 +385,5 @@ function preparePrint(){if(printState)return;printState={details:[...document.qu
 function restorePrint(){if(!printState)return;printState.details.forEach(([d,open])=>d.open=open);printState.hidden.forEach(([d,hidden])=>d.hidden=hidden);printState=null;}
 window.addEventListener("beforeprint",preparePrint);window.addEventListener("afterprint",restorePrint);
 document.getElementById("print").addEventListener("click",()=>window.print());
-
+ 
 </script></body></html>
